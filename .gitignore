@@ -1,0 +1,21 @@
+# 内核模块编译产物
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+.*.cmd
+Module.symvers
+modules.order
+.tmp_versions/
+
+# 编译出来的可执行文件：以 dma_accel_ 开头但没有扩展名的都是二进制，
+# 真正的源码文件永远带 .c/.cpp/.h/.hpp 后缀
+dma_accel_*
+!dma_accel_*.c
+!dma_accel_*.cpp
+!dma_accel_*.h
+!dma_accel_*.hpp
+
+# 本次工作会话里传输代码用的下载包，不是源码
+*.tar.gz
